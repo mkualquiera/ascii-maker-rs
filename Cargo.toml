@@ -1,0 +1,18 @@
+[package]
+name = "ascii-worker"
+version = "0.1.0"
+edition = "2024"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+console_error_panic_hook = "0.1"
+wasm-bindgen = "0.2.100"  # Make sure this matches your CLI version
+js-sys = "0.3.77"         # Should be compatible
+web-sys = { version = "0.3", features = ["console"] }
+image = "0.25.6"
+brotli = "8.0.2"
+lazy_static = "1.5.0"
